@@ -1,2 +1,1 @@
-# PraktijkOpenVeld.github.io
-Praktijk openveld website
+# openveld_website
