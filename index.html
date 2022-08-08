@@ -1,219 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Praktijk Openveld</title>
-    <script
-            crossorigin="anonymous"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
-    <script crossorigin="anonymous"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      class="logo"
+      rel="icon"
+      size="16x16"
+      type="image/svg+xml"
+      href="favicon.svg"
+    />
+    <title>Kine- en Fasciapraktijk Openveld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="bclass">
+        <h1>Kine- en Fasciapraktijk Openveld</h1>
+        <span>1702 Groot-Bijgaarden</span>
+      </div>
+      <div class="aclass">
+        <span><a href="#home">Home</a></span>
+        <span><a href="#behandelingen">Behandelingen</a> </span>
+        <span><a href="#kinesitherapeuten">Kinesitherapeuten</a> </span>
+        <span><a href="#vragen">Vragen</a> </span>
+        <span><a href="#contact">Contact</a> </span>
+      </div>
+      <div class="cclass title"><h2>De praktijk</h2></div>
+      <div class="c0class">
+        <div class="text">
+          <em>"Feel by touch & move by sense."</em>
+        </div>
+      </div>
+      <div class="dclass">
+        <div class="slider">
+          <div class="mySlide fade">
+            <img src="./img/slide1.jpg" alt="" />
+          </div>
+          <div class="mySlide fade">
+            <img src="./img/slide2.jpg" alt="" />
+          </div>
+          <div class="mySlide fade">
+            <img src="./img/slide3.jpg" alt="" />
+          </div>
+          <div class="mySlide fade">
+            <img src="./img/slide4.jpg" alt="" />
+          </div>
+          <div class="mySlide fade">
+            <img src="./img/slide5.jpg" alt="" />
+          </div>
+          <div class="mySlide fade">
+            <img src="./img/slide6.jpg" alt="" />
+          </div>
 
-    <style type="text/css">
-        body {
-            background: lightgray !important;
-        }
-    </style>
+          <div class="dotsCenter">
+            <span class="dot" onclick="currentSlides(0)"></span>
+            <span class="dot" onclick="currentSlides(1)"></span>
+            <span class="dot" onclick="currentSlides(2)"></span>
+            <span class="dot" onclick="currentSlides(3)"></span>
+            <span class="dot" onclick="currentSlides(4)"></span>
+            <span class="dot" onclick="currentSlides(5)"></span>
+          </div>
+        </div>
+        <script src="app.js"></script>
+      </div>
+      <div class="eclass title" id="behandelingen">
+        <h2>Onze behandelingen</h2>
+      </div>
+      <div class="fclass">
+        <h3>Fasciatherapie</h3>
+        <div class="text">
+          <em>"Fascia"</em> is een synoniem voor <em>bindweefsel</em>. De fascia
+          speelt onder meer een rol in je doorbloeding, in de coördinatie en
+          kracht van je bewegingen en in de regulatie van pijn. Dit weefsel
+          beweegt voortdurend en past zich weer aan. Het spant zich op en
+          ontspant zich weer. Het geeft informatie aan de hersenen over de
+          toestand van het lichaam. Het heeft op die manier een impact op hoe je
+          je voelt en hoe je denkt. In de fasciatherapie behandelen we de
+          patiënt in zijn <em>totaliteit</em> : lichaam, gedrag en emoties.
+          <br />
+          Dit is een <em>zeer zachte</em> en <em>respectvolle</em> behandeling
+          waarbij de kracht en diepgang zit in de zachtheid van de behandeling.
+          Een behandeling bestaat uit een <em>manuele therapie</em> en
+          <em>bewegingseducatie</em> waarbij de patiënt bewust de beweging leert
+          waarnemen. <br />
+          <br />
+          Fasciatherapie, een nieuwe stroming binnen de kinesitherapie, kan een
+          meerwaarde bieden bij heel wat aandoeningen en ziekten. <br /><br />
+          <u>We passen deze therapie toe op patiënten met:</u>
+          <ul>
+            <li>Lichamelijke pijnen</li>
+            <li>Bewegingsproblemen</li>
+            <li>
+              Chronische aandoeningen (fibromyalgie, CVS, burn-out, borstkanker)
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="gclass">
+        <h3>Neurokinesitherapie</h3>
+        <div class="text">
+          <em>Neurologische revalidatie</em> richt zich op patiënten die een
+          beperking ondervinden d.m.v een aandoening/letsel aan de hersenen,
+          ruggenmerg en/of het zenuwstelsel. De revalidatie houdt in dat men
+          gaat focussen op het
+          <em>verbeteren en behouden van de mogelijkheden</em> van de patiënten.
+          Aan de hand van therapie gaan we het dagdagelijks functioneren
+          trachten te verbeteren. Een belangrijk aspect hierbij is dat
+          <em>de patiënt centraal staat</em> tijdens de therapie. <br />
+          <br />
+          <u>We passen deze therapie toe op patiënten met:</u>
 
-</head>
-<body>
+          <ul>
+            <li>Hersenbloeding (CVA)</li>
+            <li>Ziekte van Parkinson</li>
+            <li>Multiple sclerose (MS)</li>
+            <li>Vertigo (BPPV)</li>
+            <li>Dwarslaesie</li>
+          </ul>
+        </div>
+      </div>
+      <div class="hclass title" id="kinesitherapeuten">
+        <h2>De kinesitherapeuten</h2>
+      </div>
+      <div class="h0class">
+        <div class="text">
+          <b>Wij zijn gedeconventioneerd & scholen ons continu bij.</b>
+        </div>
+      </div>
+      <div class="iclass">
+        <div class="img-kine"><img src="./img/kine_1.png" alt="" /></div>
+        <div class="text-kine">
+          <h3>Manon Delvael</h3>
+          <ul>
+            <li>Oprichter</li>
+            <li>Kinesitherapeut (1981)</li>
+            <li>Osteopaat (certificaat sinds 1993)</li>
+            <li>Fasciatherapeut (2003)</li>
+            <li>Perceptieve pedagogie (2004)</li>
+            <li>Running therapeut</li>
+          </ul>
+        </div>
+      </div>
+      <div class="jclass">
+        <div class="img-kine"><img src="./img/kine_2.png" alt="" /></div>
+        <div class="text-kine">
+          <h3>Chenoa Morales Caceres</h3>
+          <ul>
+            <li>
+              Master in de revalidatiewetenschappen en kinesitherapie aan de VUB
+              (2020)
+            </li>
+            <li>
+              Specialisatie in de neurologische aandoeningen
+              (Neurokinesitherapeut) (2020)
+            </li>
+            <li>Perinatale kinesitherapie</li>
+            <li>Fasciatherapeut (In opleiding 2020)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="oclass" id="vragen">
+        <h2>Vragen</h2>
+      </div>
+      <div class="o0class">
+        <h3>Vragen & antwoorden</h3>
+        <div class="text">
+          <ul>
+            <li>
+              <u> Wat neem ik mee tijdens het eerste consult?</u> <br />
+              Uw identiteitskaart, voorschrift, een klevertje van de mutualiteit
+              & eventuele medische verslagen.
+            </li>
+            <li>
+              <u> Hoe kan ik betalen?</u> <br />
+              Cash of met een betalingsapp (bv. Payconic). Er wordt per sessie
+              betaald.
+            </li>
+            <li>
+              <u> Hoeveel wordt door te mutualiteit terugbetaald?</u> <br />
+              Dit is afhankelijk van de pathologie waarvoor u behandeld wordt &
+              welk statuut u heeft bij de mutualiteit.
+            </li>
+            <li>
+              <u>Wat als ik mijn afspraak niet kan nakomen? </u><br />
+              Gelieve 24u op voorhand te verwittigen via telefonisch contact of
+              mail. Zo niet? Dan zal het honorarium van de verstrekking
+              aangerekond worden zonder tussenkomst van de
+              verzekeringsinstelling.
+            </li>
+          </ul>
+        </div>
+      </div>
 
-<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #0c324b;">
-    <a class="navbar-brand" href="home.html"> Kine- en Fasciapraktijk Openveld</a>
-    <button aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation"
-            class="navbar-toggler"
-            data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>
+      <div class="kclass title" id="contact"><h2>Contactgegevens</h2></div>
+      <div class="lclass">
+        <div class="text">
+          <h3>Adres</h3>
+          <!-- <span>Openveldlaan 19</span> 
+          <span>1702 Groot-Bijgaarden</span> -->
+          <!-- <p>Openveldlaan 19</p> 
+          <p>1702 Groot-Bijgaarden</p>  -->
+          Openveldlaan 19, <br />
+          1702 Groot-Bijgaarden. <br />
+          U kunt het huis gemakkelijk herkennen door de oranje kleur. <br />
+          <h3>Telefoon</h3>
+          <a href="tel:024668470">02 466 84 70</a><br />
+          <h3>E-mail</h3>
+
+          <a href="mailto:manon.delvael@skynet.be"> manon.delvael@skynet.be</a
+          ><br />
+
+          <a href="mailto:chenoamorales95@hotmail.com"
+            >chenoamorales95@hotmail.com</a
+          ><br /><br />
+
+          U kunt ons telefonisch contacteren om een afspraak te maken of een
+          afspraak te annuleren (gelieve dit minstens een dag op voorhand te
+          doen). Voor algemene vragen kunt u ons ook bereiken via mail.
+        </div>
+      </div>
+      <div class="mclass">
+        <iframe
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=nl&amp;q=Openveldlaan%2019,%201702%20Groot-Bijgaarde+(Paramedische%20praktijk%20Openveld)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          class="googlemaps"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="nclass">
+        © Copyright 2022 - Sarah De Bruycker & Senne Deproost
+      </div>
+    </div>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">
+      ⮝ UP
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#behandelingen">Behandelingen</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#kinesitherapeuten">Kinesitherapeuten</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#contact">Contact</a>
-            </li>
-        </ul>
-
-    </div>
-</nav>
-
-
-<div class="jumbotron"
-     style="background-color: #619aa6; padding: 10%; background-image: url('../img/fascia.png'); background-repeat: no-repeat; background-position: left; background-size: 200%; back">
-    <div class="text-center text-white" style="backdrop-filter: blur(5px) contrast(50%); padding: 20px;">
-        <h1 class="font-italic" style="text-shadow: 2px 2px black;">Feel by touch and move by sense</h1>
-        <p style="text-shadow: 1px 1px black;">Fascia- en kinesitherapie</p>
-    </div>
-</div>
-</div>
-
-
-<div class="container-fluid " style="margin-top:10%; padding: 50px; background-color: #0c324b;">
-    <div class="row">
-        <div class="col col-lg-8 align-self-center">
-            <div class="container rounded" style="background-color: #619aa6; padding-bottom: 60px; padding-top: 60px">
-                <h2 class="text-white">
-                    Wat is Fasciatherapie?
-                </h2>
-                <p class=text-justify>
-                    “Fascia” is een synoniem voor bindweefsel. De fascia speelt onder meer een rol in je doorbloeding,
-                    in de coördinatie en kracht van je bewegingen en in de regulatie van pijn. Dit weefsel beweegt
-                    voortdurend en past zich weer aan. Het spant zich op en ontspant zich weer.
-                    Het geeft informatie aan de hersenen over de toestand van het lichaam.
-                    Het heeft op die manier een impact op hoe je je voelt en hoe je denkt.
-                    In de fasciatherapie behandelen we de patiënt in zijn totaliteit: lichaam, gedrag en emoties.
-                    Fasciatherapie is een zeer zachte en respectvolle behandeling waarbij de kracht en diepgang zit in
-                    de zachtheid van de behandeling.
-                    Een behandeling bestaat uit een manuele therapie en bewegingseducatie waarbij de patiënt bewust de
-                    beweging leert waarnemen.
-                    Fasciatherapie, een nieuwe stroming binnen de kinesitherapie, kan een meerwaarde bieden bij heel wat
-                    aandoeningen en ziekten zoals lichamelijke pijnen en bewegingsproblemen, chronische aandoeningen
-                    (fibromyalgie, CVS, burn-out, borstkanker).
-
-                </p>
-            </div>
-        </div>
-        <div class="col align-self-center">
-            <img class="img-thumbnail" src="../img/kine_1.png">
-        </div>
-    </div>
-</div>
-
-
-<div class="container-fluid " style="margin-top:10%; padding: 50px; background-color: #0c324b;">
-    <div class="row">
-        <div class="col col-lg-8 align-self-center">
-            <div class="container rounded" style="background-color: #619aa6; padding-bottom: 60px; padding-top: 60px">
-                <h2 class="text-white">
-                    Neurokinesitherapie
-                </h2>
-                <p class=text-justify>
-                    Neurologische revalidatie richt zich op patiënten die een beperking ondervinden d.m.v een
-                    aandoening/letsel aan de hersenen, ruggenmerg en het zenuwstelsel.
-                    De revalidatie houdt in dat men gaat focussen op het verbeteren en behouden van de mogelijkheden van
-                    de patiënten.
-                    Aan de hand van therapie gaan we het dagdagelijks functioneren trachten te verbeteren. Een
-                    belangrijk aspect hierbij is het centraal zetten van de patiënt tijdens de therapie.
-                </p>
-                <p> We passen deze therapie toe op patiënten met: </p>
-                <ul>
-                    <li> CVA (hersenbloeding)</li>
-                    <li> Ziekte vab Parkinson</li>
-                    <li> MS (multiple sclerose)</li>
-                    <li> Vertigo (BPPV)</li>
-                    <li> Dwarslaesie</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col align-self-center">
-            <img class="img-thumbnail" src="../img/nerv_1.png">
-        </div>
-
-    </div>
-</div>
-
-
-<div class="container-fluid " style="margin-top:10%; padding: 50px; background-color: #0c324b;">
-    <div class="container rounded text-center"
-         style="background-color: #619aa6; padding-bottom: 60px; padding-top: 60px">
-        <h1 class="text-white"> Team therapeuten</h1>
-        <p> Alle therapeuten in deze praktijk zijn gedeconventioneerd en scholen zich continu bij.</p>
-    </div>
-    <div class="col text-center">
-        <img class="img-thumbnail" src="../img/manon.jpg" width="600" height="800">
-        <h2 class="text-white" style="padding-top: 30px; padding-bottom: 30px"> Manon Delvael </h2>
-        <div class="container rounded" style="background-color: #619aa6; padding-bottom: 60px; padding-top: 60px;">
-            <p class="text-justify text-center"></p>
-            <ul class="list-inline">
-                <li><h5>Oprichter</h5></li>
-                <li><h5>Kinesitherapeut (1981)</h5></li>
-                <li><h5>Osteopaat (certificaat behaald in 1993)</h5></li>
-                <li><h5>Fasciatherapeut (2003)</h5></li>
-                <li><h5>Perceptieve pedagogie (2004)</h5></li>
-                <li><h5>Running therapeut</h5></li>
-            </ul>
-        </div>
-    </div>
-        <div class="col text-center">
-            <img class="img-thumbnail" src="../img/chenoa.jpg" width="600" height="800">
-            <h2 class="text-white" style="padding-top: 30px; padding-bottom: 30px"> Chenoa Morales Caceres </h2>
-            <div class="container rounded" style="background-color: #619aa6; padding-bottom: 60px; padding-top: 60px;">
-                <p class="text-justify text-center"></p>
-                <ul class="list-inline">
-                    <li><h5>Master in de revalidatiewetenschappen en kinesitherapie aan de VUB (2020)</h5></li>
-                    <li><h5>Specialisatie in de neurologische aandoeningen (Neurokinesitherapeut) (2020)</h5></li>
-                    <li><h5>Perinatale kinesitherapie</h5></li>
-                    <li><h5>Fasciatherapeut (In opleiding 2020)</h5></li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="container-fluid " style="margin-top:10%; padding: 50px; background-color: #0c324b;">
-    <div class="container rounded text-center"
-         style="background-color: #619aa6; padding-bottom: 60px; padding-top: 60px">
-        <h1 class="text-white"> Contact</h1>
-    </div>
-    <div class="row" style="padding-top: 60px">
-        <div class="col text-center">
-            <div class="z-depth-1-half map-container">
-                <iframe allowfullscreen
-                        frameborder="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=nl&amp;q=Openveldlaan%2019,%201702%20Groot-Bijgaarde+(Paramedische%20praktijk%20Openveld)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="border:0; height: 500px; width: 900px"></iframe>
-            </div>
-        </div>
-        <div class="col align-self-center">
-            <div class="container rounded" style="background-color: #619aa6; padding-bottom: 60px; padding-top: 60px">
-                <h5 class="text-center">
-                    Adres
-                </h5>
-                <p class="text-center"> Openveldlaan 19, 1702 Groot-Bijgaarden (Oranje huis) </p>
-                <h5 class="text-center">
-                    Telefoon
-                </h5>
-                <p class="text-justify text-center">
-                    Om een afspraak te maken of te annuleren kan u ons enkel telefonisch contacteren op het nummer: 02
-                    466 84 70
-                </p>
-                <h5 class="text-center">
-                    E-mail
-                </h5>
-                <p class="text-justify text-center">
-                    Stuur gerust een email voor algemene vragen:
-                <ul class="list-inline text-center">
-                <li><a href="mailto:manon.delvael@skynet.be" style="color: black">manon.delvael@skynet.be</a></li>
-                <li><a href="mailto:chenoamorales95@hotmail.com" style="color: black">chenoamorales95@hotmail.com</a></li>
-                </ul>
-
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-<div class="container-fluid text-white text-center" style="margin-top:10%; padding: 20px; background-color: black">
-    <p>
-        Created by
-    </p>
-    <a href="https://www.senne.dev">
-        <img class="mx-auto d-block" src="../img/sd.png" style="width: 300px">
-    </a>
-</div>
-
-
-</body>
+    <script src="scroll.js"></script>
+  </body>
 </html>

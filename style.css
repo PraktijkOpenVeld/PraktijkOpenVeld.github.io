@@ -1,0 +1,364 @@
+.logo {
+  width: 16px;
+  height: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: clamp(10px, 2.5vw, 24px);
+}
+
+h1 {
+  font-size: clamp(22px, 5vw, 48px);
+}
+
+h2 {
+  font-size: clamp(18px, 3.2vw, 36px);
+  margin: 1vw auto;
+  padding: 0 1.5vw;
+  text-align: left;
+}
+
+h3 {
+  font-size: clamp(14px, 3vw, 28px);
+  /* background-color: rgb(168, 212, 199); */
+  background-color: rgb(195, 195, 195);
+  width: 100%;
+}
+
+li {
+  margin: 1.5vw 0;
+}
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #0c8990;
+}
+
+p {
+  white-space: pre-wrap;
+}
+
+.text {
+  display: inline-block;
+  text-align: justify;
+  line-height: 200%;
+  margin: 0 2.5vw;
+  padding: 0 2.5vw;
+}
+
+.title {
+  background-color: #508068;
+}
+
+.grid-container {
+  grid-template:
+    "b"
+    "a"
+    "c"
+    "c0"
+    "d"
+    "e"
+    "f"
+    "g"
+    "h"
+    "h0"
+    "i"
+    "j"
+    "o"
+    "k"
+    "l"
+    "m"
+    "n" / 100% 1fr;
+  background-color: rgb(138, 182, 169);
+  padding: 0.5vw;
+  max-width: 1702px;
+  margin: 0 auto;
+}
+
+.aclass {
+  grid-area: a;
+  background-color: #445c4c;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.aclass > span {
+  margin: 0 2vw;
+}
+
+.aclass > span > a {
+  color: #d6e2e0;
+}
+
+.aclass > span a:hover {
+  color: black;
+}
+
+.bclass {
+  grid-area: b;
+  width: 100%;
+  /* background-color: #bfc9ca; */
+}
+.cclass {
+  grid-area: c;
+  width: 100%;
+}
+
+.c0class {
+  grid-area: c;
+  width: 100%;
+  background-color: rgb(80, 128, 104, 0.5);
+}
+.dclass {
+  grid-area: d;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #d6e2e0;
+  width: 100%;
+}
+.eclass {
+  grid-area: e;
+  width: 100%;
+}
+
+.fclass {
+  grid-area: f;
+  background-color: #d6e2e0;
+  width: 100%;
+}
+.gclass {
+  grid-area: g;
+  background-color: #d6e2e0;
+  width: 100%;
+}
+
+.hclass {
+  grid-area: h;
+  width: 100%;
+}
+
+.h0class {
+  grid-area: h0;
+  display: grid;
+
+  width: 100%;
+  background-color: #d6e2e0;
+}
+
+.iclass {
+  grid-area: i;
+  background-color: #d6e2e0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+.jclass {
+  grid-area: j;
+  background-color: #d6e2e0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+.img-kine {
+  display: inline-block;
+  justify-content: center;
+  margin: auto 0;
+  padding: 0 2vw;
+  width: 100%;
+}
+
+.img-kine img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.text-kine {
+  text-align: justify;
+}
+
+.kclass {
+  grid-area: k;
+  width: 100%;
+}
+
+.oclass {
+  grid-area: o;
+  width: 100%;
+  background-color: #508068;
+}
+
+.o0class {
+  grid-area: o;
+  width: 100%;
+  background-color: #d6e2e0;
+}
+
+.oclass > div {
+  background-color: #d6e2e0;
+}
+.lclass {
+  grid-area: l;
+  background-color: #d6e2e0;
+  text-align: justify;
+  width: 100%;
+}
+
+/* .lclass span {
+    display: inline-block;
+    text-align: justify;
+  } */
+
+/* .lclass ul li {
+    list-style-type: none;
+    text-align: justify;
+    
+  } */
+
+.mclass {
+  grid-area: m;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+.googlemaps {
+  height: 100%;
+  width: 100%;
+  max-width: 1290px;
+}
+
+.nclass {
+  grid-area: n;
+  background-color: #445c4c;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 0.5vw;
+  margin: 0.5vw auto;
+  font-size: clamp(10px, 2.5vw, 24px);
+}
+
+.slider {
+  /* background-color: black; */
+  position: relative;
+  max-width: 650px;
+  margin: 2vw auto;
+}
+
+.mySlide {
+  display: none;
+}
+
+.mySlide img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dotsCenter {
+  text-align: center;
+  /* margin-top: -3vw; */
+  z-index: 1;
+}
+
+.dot {
+  display: inline-block;
+  cursor: pointer;
+  height: clamp(10px, 1.5vw, 18px);
+  width: clamp(10px, 1.5vw, 18px);
+  margin: auto 1vw;
+  background-color: #508068;
+  border-radius: 200px;
+}
+
+.active,
+.dot:hover {
+  background-color: rgba(161, 161, 161, 0.7);
+  border: 0.3vw solid #508068;
+}
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(100, 151, 177);
+  color: white;
+  cursor: pointer;
+  padding: clamp(10px, 1vw, 18px);
+  border-radius: 10px;
+  font-size: clamp(10px, 3vw, 32px);
+}
+
+#scrollTopBtn:hover {
+  background-color: rgb(49, 74, 86);
+}
+
+/* @media screen and (min-width: 1280px) {
+  .grid-container {
+    display: grid;
+    grid-template:
+      "b b"
+      "a a"
+      "c c"
+      "d d"
+      "e e"
+      "f g"
+      "h h"
+      "i j"
+      "k k"
+      "m l"
+      "n n";
+    background-color: rgb(138, 182, 169);
+    padding: 2vw;
+    max-width: 1290px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 95%;
+}
+
+.grid-container > div {
+  text-align: justify;
+  padding: 0.5vw;
+  margin: 0.5vw auto;
+  font-size: clamp(10px, 2.5vw, 24px);
+}
+
+.mclass {
+  width: 75%;
+}} */
